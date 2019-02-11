@@ -1,7 +1,7 @@
 {
-  "name": "ws-client-wrappers",
+  "name": "sharedb-react-provider",
   "version": "1.0.0",
-  "description": "Reconnect, Filter & Jsonify websocket client wrappers",
+  "description": "ShareDB hoc",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
