@@ -1,0 +1,25 @@
+{
+  "name": "ws-client-wrappers",
+  "version": "1.0.0",
+  "description": "Reconnect, Filter & Jsonify websocket client wrappers",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "compile": "yarn clean && babel src --loose --out-dir lib",
+    "prepublish": "yarn clean && yarn compile"
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.4",
+    "prop-types": "^15.6.0",
+    "react": ">=16.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.5.2"
+  }
+}
