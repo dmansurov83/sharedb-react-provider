@@ -44,6 +44,9 @@ class OTDocument extends Component {
             connect, collection, id, defaultData, type,
         } = this.props;
         const connection = await connect();
+        if (this.state.connectionState !== connection.state) {
+            this.setState({connectionState: connection.state});
+        }
         connection.on('state', (state) => {
             this.setState({connectionState: state});
         });
